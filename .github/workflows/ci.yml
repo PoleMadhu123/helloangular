@@ -29,19 +29,19 @@ jobs:
     # Required mail server port:
           server_port: 25
     # Optional (recommended): mail server username:
-          username: ${{secrets.EMAIL_USERNAME}}
+          #username: ${{secrets.EMAIL_USERNAME}}
     # Optional (recommended) mail server password:
-          password: ${{secrets.EMAIL_PASSWORD}}
+          #password: ${{secrets.EMAIL_PASSWORD}}
     # Required mail subject:
           subject: Github Actions job result
     # Required recipients' addresses:
           to: shanmukha.kandula@henryschein.com
     # Required sender full name (address can be skipped):
-          from: Neha Katam # <user@example.com>
+          from: Neha Katam
     # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
     # Optional plain body:
-          body: Build job of ${{github.repository}} completed successfully!
+          #body: Build job of ${{github.repository}} completed successfully!
     # Optional HTML body read from file:
           #html_body: file://README.html
     # Optional carbon copy recipients:
@@ -59,10 +59,7 @@ jobs:
     # Optional attachments:
           #attachments: attachments.zip,git.diff,./dist/static/*.js
     # Optional priority: 'high', 'normal' (default) or 'low'
-          #priority: low
-        
-    
-    
+          #priority: low  
        
 
  #deploy:
